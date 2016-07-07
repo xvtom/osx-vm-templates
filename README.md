@@ -133,6 +133,14 @@ The Xcode CLI tools are installed by the packer template by default. To disable 
 packer build -var install_xcode_cli_tools=false template.json
 ```
 
+## Homebrew
+
+[Homebrew](http://brew.sh/) is installed by the packer template by default. To disable the installation, set the `install_homebrew` variable to `false`:
+
+```
+packer build -var install_homebrew=false template.json
+```
+
 ## System updates
 
 Packer will instruct the system to download and install all available OS X updates, if you want to disable this default behaviour, use `update_system` variable:
